@@ -11,7 +11,6 @@ string itc_hello_str(string name)
 
 int main() {
     string name;
-    //cin >> name;
     cout << itc_hello_str(name);
     return 0;
 }
