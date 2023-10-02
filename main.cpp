@@ -9,8 +9,3 @@ string itc_hello_str(string name)
 	return "Hello, " + name;
 }
 
-int main() {
-    string name;
-    cout << itc_hello_str(name);
-    return 0;
-}
