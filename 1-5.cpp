@@ -24,3 +24,27 @@ void itc_print_copy_str(string str, int number)
     cout << str << endl;
     }
 }
+
+void  itc_first_end_three(string str)
+{
+    int a =  itc_len(str);
+    if (a < 5)
+    {
+       for (int i = 0; i < a; i++)
+        {
+            cout << str[0];
+        }
+    }
+    else
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            cout << str[i];
+        }
+        for (int i = a - 3; i < a; i++)
+        {
+            cout << str[i];
+        }
+    }
+
+}
