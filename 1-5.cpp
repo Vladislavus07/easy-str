@@ -48,7 +48,7 @@ void  itc_first_end_three(string str)
     }
 }
 
-int itc_cout_char_in_str(char ch, string str)
+int itc_count_char_in_str(char ch, string str)
 {
     int temp = 0;
     int a = itc_len(str);
