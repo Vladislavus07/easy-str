@@ -46,5 +46,18 @@ void  itc_first_end_three(string str)
             cout << str[i];
         }
     }
+}
 
+int itc_cout_char_in_str(char ch, string str)
+{
+    int temp = 0;
+    int a = itc_len(str);
+    for (int i = 0; i < a; i++)
+    {
+        if (str[i] == ch)
+        {
+            temp++;
+        }
+    }
+return temp;
 }
