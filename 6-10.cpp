@@ -1,17 +1,8 @@
 #include <iostream>
 #include <string>
-//#include "str_easy.h"
+#include "str_easy.h"
 using namespace std;
 
-long long itc_len(string str)
-{
-	int a = 0;
-	for (int b = 0; str[b] != '\0'; b++)
-	{
-        	a++;
-	}
-	return a;
-}
 string itc_even_place(string str)
 {
     string res = "";
@@ -28,9 +19,3 @@ string itc_even_place(string str)
 
 }
 
-/*int main(){
-    string str;
-    cin >> str;
-    cout << itc_even_place(str);
-    return 0;
-}
