@@ -16,6 +16,20 @@ string itc_even_place(string str)
         return "-1";
     }
     return res;
-
 }
 
+double itc_percent_lower_uppercase(string str)
+{
+    double a = 0, b  = 0;
+    for (int i = 0; i < itc_len(str); i++) {
+        if (str[i] <= 'z' && str[i] >= 'a')
+            {
+                b += 1;
+            }
+        else
+            {
+                a += 1;
+            }
+        }
+        return a / b;
+}
