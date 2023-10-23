@@ -42,3 +42,26 @@ string itc_reverse_str(string str)
     }
     return perev;
 }
+
+string itc_slice_str(string str, int start, int end)
+{
+    string resultat = "";
+    if (start >= end)
+    {
+        resultat = str;
+    }
+    else if (start >= itc_len(str))
+    {
+        resultat = str;
+    }
+    else {
+        if (end >= itc_len(str))
+        {
+            end = itc_len(str) - 1;
+        }
+        for (int i = start; i <= end; i++) {
+            resultat += str[i];
+        }
+    }
+    return resultat;
+}
