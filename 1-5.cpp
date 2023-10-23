@@ -28,7 +28,7 @@ void itc_print_copy_str(string str, int number)
 void  itc_first_end_three(string str)
 {
     int a =  itc_len(str);
-    if (a < 5)
+    if (a <= 5)
     {
        for (int i = 0; i < a; i++)
         {
