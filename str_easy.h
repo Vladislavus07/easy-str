@@ -13,5 +13,6 @@ int itc_count_char_in_str(char ch, string str);
 string itc_even_place(string str);
 double itc_percent_lower_uppercase(string str);
 string itc_reverse_str(string str);
+string itc_slice_str(string str, int start, int end);
 
 #endif // EASY_STR_H_INCLUDED
