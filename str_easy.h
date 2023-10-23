@@ -12,5 +12,6 @@ int itc_count_char_in_str(char ch, string str);
 
 string itc_even_place(string str);
 double itc_percent_lower_uppercase(string str);
+string itc_reverse_str(string str);
 
 #endif // EASY_STR_H_INCLUDED
