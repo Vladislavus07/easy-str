@@ -33,3 +33,12 @@ double itc_percent_lower_uppercase(string str)
         }
         return a / b;
 }
+
+string itc_reverse_str(string str)
+{
+    string perev = "";
+    for (int i = itc_len(str) - 1; i >= 0; i--) {
+        perev += str[i];
+    }
+    return perev;
+}
