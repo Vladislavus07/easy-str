@@ -16,4 +16,6 @@ string itc_reverse_str(string str);
 string itc_slice_str(string str, int start, int end);
 bool itc_equal_reverse(string str);
 
+string itc_cmp_str(string str1, string str2, int num);
+
 #endif // EASY_STR_H_INCLUDED
