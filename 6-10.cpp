@@ -68,12 +68,9 @@ string itc_slice_str(string str, int start, int end)
 
 bool itc_equal_reverse(string str)
 {
-    for (int i = 0; i < itc_len(str) / 2; i++) 
-    {
-        if (str[i] != str[itc_len(str) - i - 1])
-        {
-            return false;
-        }
-    }
-    return true;
+    string str1 = itc_reverse_str(string str);
+    if (str == str1)
+        return true;
+    else
+        return false;
 }
