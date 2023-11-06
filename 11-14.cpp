@@ -5,22 +5,32 @@ using namespace std;
 
 string itc_cmp_str(string str1, string str2, int num)
 {
-    if (num > itc_len(str1)) {
+    int dlina1 = itc_len(str1);
+    int dlina2 = itc_len(str2);
+    int dlina;
+    if (str2 == "")
+    {
         return str1;
     }
-    int dlin = itc_len(str1) + itc_len(str2);
-    if (dlin > itc_len(str1)) {
-        dlin = itc_len(str1);
+    dlina = dlina1 - num;
+    if (dlina < dlina2)
+    {
+        int temp = 0;
+        for (int i = num; i < dlina1; i++)
+        {
+            str1[i] = str2[temp];
+            temp++;
+        }
     }
-    string res(dlin, ' ');
-    for (int i = 0; i < num; i++) {
-        res[i] = str1[i];
+    else if (dlina >= dlina2)
+    {
+        int temp = 0;
+        for (int i = num; i < dlina1; i++)
+        {
+            str1[i] = str2[temp];
+            temp++;
+
+        }
     }
-    for (int i = 0; i < itc_len(str2); i++) {
-        res[num + i] = str2[i];
-    }
-    for (int i = num; i < itc_len(str1); i++) {
-        res[itc_len(str2) + i] = str1[i];
-    }
-    return res;
+    return str1;
 }
